@@ -1,0 +1,3 @@
+git stash
+git stash apply(把之前存放的内容恢复)
+git stash pop(把之前存放的内容恢复, 且删除该stash)

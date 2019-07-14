@@ -1,0 +1,12 @@
+1.删除分支
+git branch -d(-D) 分支名
+
+2.commit  修改
+    git commit --amend(最新一次的修改)
+    git rebase -i HEAD~2(被变的commit的父类)
+
+3.多个commit 合成一个commit
+    git rebase -i HEAD~2(被变的commit的父类)
+    pick 被合并的变更
+    s 合并到上面
+    s 合并到上面

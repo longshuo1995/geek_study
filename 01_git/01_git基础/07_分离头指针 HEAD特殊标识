@@ -1,0 +1,7 @@
+git checkout 65fd233
+HEAD 可以不和branch挂钩， branch 对应了一个HEAD
+
+
+git diff 65fd233 1a09036ee12ebce39aa75b828734d004697fca9a
+git diff HEAD HEAD^1^1 = git diff HEAD HEAD~2
+

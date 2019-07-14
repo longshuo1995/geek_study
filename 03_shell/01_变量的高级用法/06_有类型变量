@@ -1,0 +1,24 @@
+declare 和 typeset 命令是等价的
+declare
+-r  readonly +r  取消xxx
+-i  int
+-a  array
+-x  环境变量(当前终端有效)
+
+-F 列出函数名
+-f 列出函数体
+
+var2="hello world"
+declare -r var2
+
+数组操作
+a=("abcd" "efg")
+数组长度
+${#a[@]}
+
+输出数组
+echo ${a[@]}
+
+输出数组 第 i 个
+echo ${a[0]}
+

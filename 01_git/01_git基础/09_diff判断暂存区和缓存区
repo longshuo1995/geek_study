@@ -1,0 +1,13 @@
+git diff HEAD HEAD~2
+git diff (-- readme.md a.html 指定比较文件名，可以加参数) (用于比较工作区和暂存区的差异)
+git diff --cached (用于比较暂存区和HEAD【上一次commit的区别】)
+
+git diff HEAD master -- index.html
+
+git reset HEAD (恢复到HEAD一致)
+
+git checkout --文件名 (将工作区的某文件，恢复到和暂存区一致)
+
+
+git reset --hard 指定到第前n次提交   b2203f367390d7598928f84163dc44e8028224b2
+

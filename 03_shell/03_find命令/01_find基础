@@ -1,0 +1,27 @@
+find 选项参数对照表
+
+-name 根据文件名查找  find . -name '*文言文*'
+-iname （不区分大小写）
+
+-perm 根据文件权限查找
+
+-prune 该选项可以排除某些查找目录
+    [-path ./log -prune -o] -type f  排除 ./log 目录
+-user -group -nogroup -nouser
+find . -user Macx
+
+-size -n | +n
+    -size +1M
+-mtime -n(n天之内) | +n(n天之外) 根据文件更改时间(天)
+-mmin 参数分钟
+-newer file1 !file2  比file1 新， 比file2旧
+
+
+-type
+    f 文件
+    d 目录
+    l 链接
+
+-maxdepth n
+-mindepth n 从n级子目录开始搜索
+

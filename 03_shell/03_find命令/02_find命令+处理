@@ -1,0 +1,18 @@
+1.将find 结果 作为exec的输入 {}代表前面搜索的文件
+find . -name "li*" -exec rm -rf {} \;
+
+2.逻辑运算符  默认是 -a
+-a  and
+-o  or
+-no|! not
+
+3.常用查找命令
+locate (数据库文件中搜索,更快,但是更新不及时)
+    locate -u :updatedb
+    locate默认是部分查找    .pyc
+
+whereis
+    -b 只返回二进制执行文件
+    -m 只返回帮助文件
+    -s 源代码文件
+which

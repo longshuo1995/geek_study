@@ -1,0 +1,18 @@
+./HEAD  当前分支的状况 一般指向到 ./refs/heads/分支名
+
+./config  对应 git config --local 配置的
+
+./refs/
+    heads 对应的分支
+
+    tags  里程碑，commit的时候， 可以指定（一般为关键性版本的时候）
+
+
+查看object的hash类型
+git cat-file -t e87d (commit tree blob)
+
+查看object的hash内容
+git cat-file -p e87d
+
+./objects/
+存的hash对象

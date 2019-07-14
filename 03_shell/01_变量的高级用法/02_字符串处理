@@ -1,0 +1,16 @@
+计算字符串长度
+${#v1}
+`expr length $v1`
+
+获取索引
+expr index "$v1" c
+
+获取匹配位置(从头开始匹配)
+expr match "$v1" def
+
+抽取子字符串
+${v1:2}  从index 2开始截取
+${v1:2:3}  从index 2 开始截取 3个
+${v1:0-2:1}  从index 右边2 开始截取 1个
+expr substr $v1 position length
+

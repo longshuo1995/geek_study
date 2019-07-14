@@ -1,0 +1,34 @@
+命令替换
+方法1  `command`
+方法2  $(command)
+算数计算
+year=$(date +%Y)
+$(($year+1))
+year=$(($(date +%Y) + 1))
+
+cut 命令：
+    -d ":"
+    -f 1
+cat /etc/passwd |cut -d ":" -f 1
+
+遍历所有用户
+
+index=1
+for user in `cat /etc/passwd`
+do
+    sp_index=`expr index "$user" ":"`
+    echo
+    u2=`expr substr "$user" 0 $(($sp_index-1))`
+    echo "This is $index user: $u2"
+    index=$(($index+1))
+done
+
+a=("ab", "bc")
+for i in a
+do
+    echo $i
+done
+
+
+获取今年还剩多少星期， 过了多少个星期了
+

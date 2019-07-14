@@ -1,0 +1,27 @@
+git status  ：查看工作目录，工作区间的文件变更状态
+
+git log : 查看当前分支历史版本的状态
+--online      一行模式
+-n 3        显示前n行
+--all    显示所有分支的历史信息
+--graph  图形化展示分支的演变
+temp     分支名， 过滤掉与该分支无关的
+
+
+分支
+0 git branch 查看分支
+    -av  查看分支所有信息
+
+1 创建，切换分支
+    创建分支， 并切换到该分支
+        git branch temp
+        git checkout temp
+    合并写法
+        git checkout -b temp
+
+
+浏览器查看帮助
+git help --web
+
+可视化界面查看分支
+gitk

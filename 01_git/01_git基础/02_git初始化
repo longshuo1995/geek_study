@@ -1,0 +1,7 @@
+1.建git仓库
+    (1)已有代码纳入git管理(创建.git 文件夹)
+        cd 项目目录
+        git init
+    (2)新建的项目直接用git管理 相当于(创建 your_project 且在your_project 中建立.git)
+        git init your_project
+        cd your_project

@@ -1,0 +1,7 @@
+# 判断nginx是否存在， 不存在则开启
+
+nginx_process_num=`ps -aux |grep nginx|grep -v grep|wc -l`
+echo $nginx_process_num
+if [ $nginx_process_num -eq 0 ];then
+    echo "killed.."
+fi

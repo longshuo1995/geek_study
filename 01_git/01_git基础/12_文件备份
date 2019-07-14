@@ -1,0 +1,6 @@
+智能协议与哑协议
+
+同步到远端
+1.查看远端  git remote -v
+2.绑定远端  git remote add 远端名称(随意起) file:// .git
+git push --set-upstream 本地branch 远端

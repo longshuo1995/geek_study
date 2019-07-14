@@ -1,0 +1,27 @@
+定义
+test(){
+    echo $1
+    echo $2
+}
+
+test "zhangsan" "lisi"
+
+调用
+test $1 $2
+
+守护进程 + 重定向到垃圾桶
+ps -ef |grep nginx|grep -v grep|wc -l &> /dev/null
+
+函数返回值
+          return  1~255的整数
+          echo 可以是任意数据
+
+
+get_user(){
+    users=`cat /etc/passwd |cut -d ":" -f 1`
+    echo $users
+}
+b=get_user
+echo "test..."
+echo $b
+

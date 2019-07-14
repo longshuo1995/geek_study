@@ -1,0 +1,51 @@
+string="haha i am longs hah i am longs"
+要求：
+当用户输入 q|Q 时， 退出
+当用户输入 1，2，3，4时：
+1. 打印string长度
+2. 删除字符串中所有的longs
+3. 替换第一个longs 为  shuo
+4. 替换全部longs 为 shuo
+
+
+function print_tips
+{
+    echo "*****************"
+    echo "1. 打印string长度"
+    echo "2. 删除字符串中所有的longs"
+    echo "3. 替换第一个longs 为  shuo"
+    echo "4. 替换全部longs 为 shuo"
+    echo "*****************"
+    echo "请输入你的选择 1， 2， 3， 4 按q|Q退出"
+}
+
+
+string="haha i am longs hah i am longs"
+while true
+do
+    read -p "Pls input" choice
+    case $choice in
+        1)
+            v=`expr length "$string"`
+            echo $v
+        ;;
+        2)
+            v=${string//longs/}
+            echo $v
+        ;;
+        3)
+            v=${string/longs/shuo}
+            echo $v
+        ;;
+        4)
+            v=${string//longs/shuo}
+            echo $v
+        ;;
+        q|Q)
+            exit
+        ;;
+        *)
+            echo "请输入1 2 3 4 或者 q Q"
+        ;;
+    esac
+done

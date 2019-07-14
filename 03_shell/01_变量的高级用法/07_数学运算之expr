@@ -1,0 +1,15 @@
+expr $num1 operator $num2
+不等价于
+$(($num1 operator $num2))  某些比较符不能使用
+
+num1 | num2   if num1: return num1 else return num2
+
+判断一个数是不是正整数
+read -p "please enter a num" n1
+expr $n1 + 1
+if [ $? eq 0 ];then
+    echo "not a int"
+fi
+if [ `expr $n1 \> 0` -eq 1 ];then
+    echo 'greater than 0'
+fi

@@ -1,0 +1,20 @@
+sed(Stream Editor)
+
+语法格式
+1 stdout| sed [option] "pattern command"
+2 sed [option] "/pattern/command" file
+
+[option]
+-n 静默模式
+-e 可以指定多个 /patten/command
+-f 文件保存 /pattern/command
+-r 支持拓展表达式(我试的默认就支持)
+
+
+sed -n -e "/python/p" -e "/PYTHON/p" file
+
+pattern 为拓展正则
+
+command:
+p                   print
+'s/row/after/g'     编辑命令 替换

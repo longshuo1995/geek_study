@@ -1,0 +1,25 @@
+一。安装
+1.安装git
+官网文档
+https://git-scm.com/book/zh/v2
+
+2.安装成功后查看版本
+git --version
+
+
+二。git使用前需要做的最小配置
+git config --global user.name 'your_name'
+git config --global user.email 'your_email@domain.com'
+
+查看配置信息
+git config --list 【--global】
+查看单个
+git config user.name
+
+
+
+设置域范围
+git config --local(只对某个仓库有效)
+git config --global(对当前用户所有仓库有效)
+git config --system(对系统所有登录的用户都有效)
+
